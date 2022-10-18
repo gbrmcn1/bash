@@ -1,3 +1,5 @@
+echo Logged on to server: $HOSTNAME
+
 # Set colors to variables
 BLACK="\[\033[0;30m\]"
 BLACKB="\[\033[1;30m\]"
@@ -51,3 +53,8 @@ export PS1=$CYAN'\u'$YELLOW'@'$GREEN'\h'$WHITE' → '$PURPLE'[\w]\e[0m$(git_colo
 
 # Set tab name to the current directory
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+
+
+
+alias ll='ls -alh' 
+alias home='clear && cd ~ && ll'
