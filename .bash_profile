@@ -54,7 +54,8 @@ export PS1=$CYAN'\u'$YELLOW'@'$GREEN'\h'$WHITE' → '$PURPLE'[\w]\e[0m$(git_colo
 # Set tab name to the current directory
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 
-
-
+# I am lazy and my keyboard is too sensitive
+alias sl='ls -alh'
+alias lls='ls -alh'
 alias ll='ls -alh' 
 alias home='clear && cd ~ && ll'
